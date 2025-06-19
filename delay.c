@@ -16,6 +16,7 @@ void delay_us(int us)
 		}else{
 			cnt += told + load + 1 - tnow;
 		}
+		told = tnow;
 		if(cnt >= ticks){
 			break;
 		}
